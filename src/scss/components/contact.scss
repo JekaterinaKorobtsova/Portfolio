@@ -1,0 +1,46 @@
+
+form {
+    display: grid;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid $grey;
+    align-items: baseline;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(121, 180, 183, 0.9);
+
+    .dark-mode & {
+        background-color: $light;
+        opacity: 0.9;
+      }
+    
+
+    label {
+        color: $blue;
+    }
+    input {
+        height: 40px;
+        border: 1px solid $grey;
+        color: $grey;
+    }
+    textarea {
+        min-height: 80px;
+        border: 1px solid $grey;
+        color: $grey;
+    }
+    button {
+        width: 30%;
+        height: 40px;
+        background-color: white;
+        border: 1px solid $grey;
+        color: $blue;
+        font-weight: bold; 
+        margin: auto;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $blue;
+            color: white;
+        }
+    }
+}

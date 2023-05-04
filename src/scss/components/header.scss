@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+header {
+  padding: 10px 0;
+  background-color: $light;
+  position: sticky;
+  box-shadow: 0 0 10px rgba(121, 180, 183, 0.9);
+
+  @media (max-width: 510px) {
+    font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 510px) {
+    justify-content: center;
+}
+}
+
+.icon-button {
+  justify-content: flex-start;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  font-size: 35px;
+
+  @media (max-width: 510px) {
+    font-size: 20px;
+}
+@media (max-width: 300px) {
+  margin-left: 1px;
+}
+}
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+
+  li {
+    padding-right: 50px;
+    font-weight: bold;
+
+    @media (max-width: 510px) {
+      padding-right: 20px;
+  }
+  }
+
+  li.active,
+  li:hover {
+    cursor: pointer;
+    color: $blue;
+  }
+}
