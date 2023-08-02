@@ -13,20 +13,47 @@ form {
         background-color: $light;
         opacity: 0.9;
       }
+
+      @media (max-width: 600px), (max-height: 555px)  {
+        gap: 10px;
+        padding: 7px;
+       }
+
+       @media (max-height: 555px)  {
+        gap: 5px;
+        padding: 4px;
+       }
+      
     
 
     label {
         color: $blue;
+        @media (max-height: 555px)  {
+            font-size: 12px;
+           }
     }
     input {
         height: 40px;
         border: 1px solid $grey;
         color: $grey;
+
+
+        @media (max-width: 600px), (max-height: 555px)  {
+            height: 30px;
+           }
+           @media (max-height: 555px)  {
+            height: 20px;
+           }
     }
     textarea {
         min-height: 80px;
         border: 1px solid $grey;
         color: $grey;
+
+        @media (max-height: 555px)  {
+            min-height: 40px;
+           }
+
     }
     button {
         width: 30%;
@@ -36,11 +63,16 @@ form {
         color: $blue;
         font-weight: bold; 
         margin: auto;
+        border-radius: 17px;
 
         &:hover {
             cursor: pointer;
             background-color: $blue;
             color: white;
         }
+        @media (max-height: 555px)  {
+            height: 25px;
+            width: 20%;
+           }
     }
 }
